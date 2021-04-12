@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleof.org">
+<head>
+<meta charset="UTF-8">
+<title>Vacante</title>
+</head>
+<body>
+	<h1>Detalles de la vacante</h1>
+	<!--
+		<p th:text="'Nombre vacante: '+${nombre}"></p>
+		<p th:text="'Fecha publicación: '+${fecha}"></p>
+		<p th:text="'Salario ofrecido: '+${salario}"></p>
+		<p th:text="'¿Está vigente?: '+${vigente}"></p>
+		
+		<h1>Lista de vacantes</h1>
+		<ol>
+			<li th:each="vacante: ${vacantes}" th:text="${vacante}"></li>
+		</ol>
+	-->
+	<p th:text="'Id publicación: '+${vacante.id}"></p>
+	<p th:text="'Nombre vacante: '+${vacante.nombre}"></p>
+	<p th:text="'Descripción: '+${vacante.descripcion}"></p>
+	<p th:text="'Fecha: '+${vacante.fecha}"></p>
+	<p th:text="'Salario aproximado: '+${vacante.salario}"></p>
+	
+</body>
+</html>
